@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$POOPOO Coin - Flipping Kevin's Net Worth</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+```
+    body {
+        font-family: 'Arial', 'Helvetica', sans-serif;
+        background: #000;
+        color: #fff;
+        overflow-x: hidden;
+    }
+
+    .bg-gradient {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle at 20% 50%, #8B4513 0%, #000 50%),
+                    radial-gradient(circle at 80% 50%, #654321 0%, #000 50%);
+        z-index: -1;
+    }
+
+    .floating {
+        position: fixed;
+        font-size: 3rem;
+        animation: float 4s ease-in-out infinite;
+        opacity: 0.15;
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    @keyframes float {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-30px) rotate(15deg); }
+    }
+
+    .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 20px;
+        position: relative;
+        z-index: 1;
+    }
+
+    header {
+        text-align: center;
+        padding: 60px 20px;
+        margin-bottom: 40px;
+    }
+
+    .logo {
+        font-size: 8rem;
+        animation: spin 6s linear infinite;
+        display: inline-block;
+        filter: drop-shadow(0 0 20px rgba(139, 69, 19, 0.8));
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    h1 {
+        font-size: 5rem;
+        font-weight: 900;
+        text-shadow: 0 0 40px rgba(139, 69, 19, 0.8);
+        margin: 30px 0;
+        letter-spacing: 5px;
+        animation: glow 2s ease-in-out infinite;
+    }
+
+    @keyframes glow {
+        0%, 100% { text-shadow: 0 0 40px rgba(139, 69, 19, 0.8); }
+        50% { text-shadow: 0 0 60px rgba(139, 69, 19, 1), 0 0 80px rgba(210, 105, 30, 0.6); }
+    }
+
+    .subtitle {
+        font-size: 1.8rem;
+        color: #D2691E;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+
+    .kevin-quote {
+        background: linear-gradient(135deg, rgba(139, 69, 19, 0.3) 0%, rgba(101, 67, 33, 0.3) 100%);
+        padding: 50px;
+        border-radius: 20px;
+        margin: 50px 0;
+        border: 3px solid #8B4513;
+        font-size: 1.8rem;
+        line-height: 1.8;
+        font-weight: 600;
+        text-align: center;
+        box-shadow: 0 10px 40px rgba(139, 69, 19, 0.4);
+    }
+
+    .quote-author {
+        text-align: center;
+        color: #D2691E;
+        margin-top: 25px;
+        font-weight: 900;
+        font-size: 1.5rem;
+    }
+
+    .mission {
+        text-align: center;
+        padding: 60px 40px;
+        background: linear-gradient(135deg, rgba(139, 69, 19, 0.4) 0%, rgba(0, 0, 0, 0.8) 100%);
+        border-radius: 20px;
+        margin: 50px 0;
+        border: 3px solid #8B4513;
+    }
+
+    .mission h2 {
+        font-size: 3.5rem;
+        margin-bottom: 30px;
+        font-weight: 900;
+        color: #D2691E;
+    }
+
+    .mission-target {
+        font-size: 6rem;
+        font-weight: 900;
+        color: #fff;
+        margin: 30px 0;
+        text-shadow: 0 0 30px rgba(139, 69, 19, 1);
+    }
+
+    .stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin: 60px 0;
+    }
+
+    .stat-card {
+        background: linear-gradient(135deg, rgba(139, 69, 19, 0.3) 0%, rgba(0, 0, 0, 0.8) 100%);
+        padding: 40px;
+        border-radius: 20px;
+        text-align: center;
+        border: 3px solid #8B4513;
+        transition: all 0.3s;
+    }
+
+    .stat-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(139, 69, 19, 0.6);
+        border-color: #D2691E;
+    }
+
+    .stat-number {
+        font-size: 3.5rem;
+        font-weight: 900;
+        color: #D2691E;
+        margin: 15px 0;
+        text-shadow: 0 0 20px rgba(139, 69, 19, 0.8);
+    }
+
+    .stat-label {
+        font-size: 1.3rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .features {
+        background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(139, 69, 19, 0.3) 100%);
+        padding: 60px;
+        border-radius: 20px;
+        margin: 60px 0;
+        border: 3px solid #8B4513;
+    }
+
+    .features h2 {
+        text-align: center;
+        font-size: 3.5rem;
+        margin-bottom: 50px;
+        color: #D2691E;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+    .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+    }
+
+    .feature-item {
+        background: rgba(139, 69, 19, 0.2);
+        padding: 30px;
+        border-radius: 15px;
+        border: 2px solid #8B4513;
+        font-size: 1.3rem;
+        font-weight: 600;
+        line-height: 1.6;
+    }
+
+    .feature-item:before {
+        content: "💩";
+        font-size: 2.5rem;
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .progress-section {
+        background: rgba(0, 0, 0, 0.9);
+        padding: 60px;
+        border-radius: 20px;
+        margin: 60px 0;
+        border: 3px solid #8B4513;
+    }
+
+    .progress-section h2 {
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 40px;
+        color: #D2691E;
+        font-weight: 900;
+    }
+
+    .progress-bar-container {
+        background: rgba(139, 69, 19, 0.3);
+        height: 80px;
+        border-radius: 50px;
+        overflow: hidden;
+        position: relative;
+        border: 3px solid #8B4513;
+    }
+
+    .progress-bar {
+        height: 100%;
+        background: linear-gradient(90deg, #8B4513 0%, #D2691E 100%);
+        width: 0.43%;
+        animation: fillProgress 3s ease-out forwards;
+        position: relative;
+    }
+
+    @keyframes fillProgress {
+        from { width: 0%; }
+        to { width: 0.43%; }
+    }
+
+    .progress-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.8rem;
+        font-weight: 900;
+        z-index: 10;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    }
+
+    .comparison {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        margin: 60px 0;
+    }
+
+    .comparison-card {
+        background: linear-gradient(135deg, rgba(139, 69, 19, 0.3) 0%, rgba(0, 0, 0, 0.9) 100%);
+        padding: 50px;
+        border-radius: 20px;
+        text-align: center;
+        border: 3px solid #8B4513;
+    }
+
+    .comparison-card h3 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        font-weight: 900;
+        color: #D2691E;
+    }
+
+    .comparison-value {
+        font-size: 4rem;
+        font-weight: 900;
+        margin: 20px 0;
+        color: #fff;
+    }
+
+    .disclaimer {
+        background: rgba(139, 69, 19, 0.2);
+        padding: 40px;
+        border-radius: 15px;
+        margin-top: 60px;
+        border: 3px solid #8B4513;
+        font-size: 1.1rem;
+        text-align: center;
+        line-height: 1.8;
+        font-weight: 600;
+    }
+
+    footer {
+        text-align: center;
+        padding: 50px;
+        margin-top: 60px;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    .ticker {
+        background: rgba(0, 0, 0, 0.95);
+        padding: 20px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: 900;
+        z-index: 1000;
+        border-top: 3px solid #8B4513;
+        letter-spacing: 2px;
+    }
+
+    @media (max-width: 768px) {
+        h1 { font-size: 3rem; }
+        .logo { font-size: 5rem; }
+        .stat-number { font-size: 2.5rem; }
+        .mission-target { font-size: 4rem; }
+        .comparison { grid-template-columns: 1fr; }
+        .feature-grid { grid-template-columns: 1fr; }
+    }
+</style>
+```
+
+</head>
+<body>
+    <div class="bg-gradient"></div>
+
+```
+<div class="floating" style="top: 10%; left: 10%;">💩</div>
+<div class="floating" style="top: 20%; right: 15%;">💩</div>
+<div class="floating" style="top: 60%; left: 5%;">💩</div>
+<div class="floating" style="top: 70%; right: 10%;">💩</div>
+<div class="floating" style="top: 40%; right: 5%;">💩</div>
+
+<div class="container">
+    <header>
+        <div class="logo">💩</div>
+        <h1>$POOPOO</h1>
+        <p class="subtitle">The People's Coin</p>
+    </header>
+
+    <div class="kevin-quote">
+        <p>"Most of these altcoins, what I call poopoo coins are done."</p>
+        <p class="quote-author">— KEVIN O'LEARY</p>
+    </div>
+
+    <div class="mission">
+        <h2>THE MISSION</h2>
+        <p style="font-size: 2rem; font-weight: 700;">FLIP KEVIN'S NET WORTH</p>
+        <div class="mission-target">$400,000,000</div>
+        <p style="font-size: 1.5rem; font-weight: 700; margin-top: 20px;">ONE POOPOO AT A TIME</p>
+    </div>
+
+    <div style="background: linear-gradient(135deg, rgba(139, 69, 19, 0.4) 0%, rgba(0, 0, 0, 0.9) 100%); padding: 50px; border-radius: 20px; margin: 50px 0; border: 3px solid #8B4513; text-align: center;">
+        <h2 style="font-size: 2.5rem; margin-bottom: 30px; font-weight: 900; color: #D2691E;">CONTRACT ADDRESS</h2>
+        <div style="background: rgba(0, 0, 0, 0.8); padding: 30px; border-radius: 15px; border: 2px solid #8B4513;">
+            <p style="font-size: 1.8rem; font-weight: 900; color: #fff; word-break: break-all; letter-spacing: 2px; line-height: 1.6;">BF7Sfr4soxrdWNiNbtDVDE2ucmfFYsib73PVPLVCpump</p>
+        </div>
+        <p style="font-size: 1.2rem; margin-top: 25px; font-weight: 700; color: #D2691E;">💩 SOLANA NETWORK 💩</p>
+    </div>
+
+    <div class="comparison">
+        <div class="comparison-card">
+            <h3>$POOPOO NOW</h3>
+            <div class="comparison-value">$1.3M</div>
+            <p style="font-size: 1.3rem; font-weight: 700; margin-top: 20px;">HOURS OLD</p>
+        </div>
+        <div class="comparison-card">
+            <h3>TARGET</h3>
+            <div class="comparison-value">$400M</div>
+            <p style="font-size: 1.3rem; font-weight: 700; margin-top: 20px;">KEVIN'S NET WORTH</p>
+        </div>
+    </div>
+
+    <div class="progress-section">
+        <h2>PROGRESS TO FLIPPING KEVIN</h2>
+        <div class="progress-bar-container">
+            <div class="progress-bar"></div>
+            <div class="progress-text">0.325% COMPLETE</div>
+        </div>
+        <p style="text-align: center; font-size: 1.5rem; margin-top: 30px; font-weight: 700;">$398.7M TO GO</p>
+    </div>
+
+    <div class="stats">
+        <div class="stat-card">
+            <div class="stat-label">Market Cap</div>
+            <div class="stat-number">$1.3M</div>
+            <div class="stat-label">🚀 Launched Today</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">Kevin's Opinion</div>
+            <div class="stat-number">POOPOO</div>
+            <div class="stat-label">❌ Our Badge of Honor</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">Community Power</div>
+            <div class="stat-number">UNSTOPPABLE</div>
+            <div class="stat-label">💪 United by Memes</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">Multiplier Needed</div>
+            <div class="stat-number">308x</div>
+            <div class="stat-label">📈 LFG!</div>
+        </div>
+    </div>
+
+    <div class="features">
+        <h2>WHY WE'LL FLIP KEVIN</h2>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <strong>COMMUNITY DRIVEN:</strong> No VCs, no insiders, just pure community power
+            </div>
+            <div class="feature-item">
+                <strong>MEME SUPREMACY:</strong> Kevin gave us the best marketing campaign ever
+            </div>
+            <div class="feature-item">
+                <strong>PUMP.FUN LEGEND:</strong> Born on the people's platform, destined for greatness
+            </div>
+            <div class="feature-item">
+                <strong>VIRAL MOMENTUM:</strong> Hit $1.3M in hours, imagine what's next
+            </div>
+            <div class="feature-item">
+                <strong>ZERO UTILITY:</strong> Just like Kevin likes it, maximum meme energy
+            </div>
+            <div class="feature-item">
+                <strong>UNITED MISSION:</strong> Every holder is here to prove Kevin wrong
+            </div>
+        </div>
+    </div>
+
+    <div class="disclaimer">
+        <strong>⚠️ DISCLAIMER ⚠️</strong><br><br>
+        $POOPOO is a memecoin with ZERO intrinsic value or expectation of financial return. 
+        This is for entertainment purposes only. Kevin O'Leary does not endorse this token. 
+        Don't invest what you can't afford to lose. This is not financial advice. DYOR. 
+        We're here for the memes and the community, not to flip Kevin's actual net worth (but wouldn't that be funny?).
+    </div>
+
+    <footer>
+        <p style="font-size: 1.8rem; margin-bottom: 20px;">© 2024 $POOPOO COIN</p>
+        <p style="font-size: 1.3rem; color: #D2691E;">MADE BY THE COMMUNITY, FOR THE COMMUNITY</p>
+        <p style="margin-top: 30px; font-size: 1.1rem;">Thanks for the inspiration, Kevin 💩</p>
+    </footer>
+</div>
+
+<div class="ticker">
+    🔥 $POOPOO | MISSION: FLIP KEVIN'S $400M NET WORTH | CURRENT: $1.3M | 308x TO GO 🚀
+</div>
+
+<script>
+    // Add more floating poops
+    for (let i = 0; i < 15; i++) {
+        const poop = document.createElement('div');
+        poop.className = 'floating';
+        poop.textContent = '💩';
+        poop.style.top = Math.random() * 100 + '%';
+        poop.style.left = Math.random() * 100 + '%';
+        poop.style.animationDelay = Math.random() * 4 + 's';
+        poop.style.fontSize = (Math.random() * 2 + 2) + 'rem';
+        document.body.appendChild(poop);
+    }
+
+    // Animate ticker
+    let multiplier = 308;
+    setInterval(() => {
+        multiplier -= 0.1;
+        if (multiplier < 1) multiplier = 308;
+        document.querySelector('.ticker').innerHTML = 
+            `🔥 $POOPOO | MISSION: FLIP KEVIN'S $400M NET WORTH | CURRENT: $1.3M | ${multiplier.toFixed(1)}x TO GO 🚀`;
+    }, 5000);
+</script>
+```
+
+</body>
+</html>
